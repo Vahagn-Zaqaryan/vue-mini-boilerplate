@@ -1,0 +1,24 @@
+{
+    "name": "vue-mini-boilerplate",
+    "version": "0.1.2",
+    "description": "This is an extremely simplified version of a Vue Core library",
+    "private": true,
+    "homepage": "https://github.com/Vahagn-Zaqaryan/vue-mini-boilerplate#readme",
+    "main": "server.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vahagn-Zaqaryan/vue-mini-boilerplate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Vahagn-Zaqaryan/vue-mini-boilerplate/issues"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "helmet": "^3.22.3"
+    }
+}
