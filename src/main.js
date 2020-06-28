@@ -13,14 +13,18 @@ const App = {
         console.log('App is updated')
     },
 
+    methods: {
+        onClick() {
+            this.data.count++
+        }
+    },
+
     render() {
         return h('div', { class: 'vue-mini-app' }, [
             h('div', { class: 'vue-mini-app-container' }, [
                 h('span', null, String(this.data.count)),
                 h('button',  {
-                    onClick: () => {
-                        this.data.count++
-                    }
+                    onClick: this.methods.onClick
                 }, 'Increment')
             ])
         ])
