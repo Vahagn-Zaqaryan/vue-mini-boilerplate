@@ -128,7 +128,9 @@ export function h(tag, props, children) {
     }
 }
 
-export function mountApp(component, container) {
+export function createApp(component, selector) {
+    const container = document.querySelector(selector)
+
     let isMounted = false
     let prevVdom
 

@@ -1,4 +1,4 @@
-import { mountApp, reactive, h } from '../core/vue-mini-core.js'
+import { createApp, reactive, h } from '../core/vue-mini-core.js'
 
 const App = {
     data: reactive({
@@ -31,4 +31,4 @@ const App = {
     },
 }
 
-mountApp(App, document.getElementById('app'))
+createApp(App, '#app')
